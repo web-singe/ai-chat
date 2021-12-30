@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body,html{
+    height: 100%;
+}
+
+.Box{
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.Box .topTitle{
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+    text-align: center;
+    background-color: #EDEDED;
+    color: #181818;
+    border-bottom: 1px solid #E7E7E7;
+    font-size: 24px;
+    font-weight:600;
+}
+
+.Box .content{
+    width: calc(100% - 36px);
+    height: calc(100% - 152px);
+    background-color: #EDEDED;
+    padding:0 18px;
+    overflow-y: auto;
+}
+
+.Box .content .self{
+    width: 100%;
+    margin:16px 0;
+}
+
+.Box .content .self::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Box .content .self .headPor{
+    width: 60px;
+    height: 60px;
+    border-radius:4px;
+    overflow: hidden;
+    float: right;
+}
+
+.Box .content .self .headPor img{
+    width: 100%;
+    height: 100%;
+}
+
+.Box .content .self .chatBox{
+    position: relative;
+    float: right;
+    margin-right: 18px;
+    max-width: calc(100% - 176px);
+    min-height: 26px;
+    background-color: #95EC69;
+    border-radius: 4px;
+    padding:17px 10px;
+}
+
+.Box .content .self .chatBox::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-left-color: #95EC69;
+    top:22px;
+    right: -16px;
+}
+
+.Box .content .self .chat{
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+
+.Box .content .date{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    color: #919191;
+}
+
+
+.Box .content .others{
+    width: 100%;
+    margin:16px 0;
+}
+
+.Box .content .others::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.Box .content .others .headPor{
+    width: 60px;
+    height: 60px;
+    border-radius:4px;
+    overflow: hidden;
+    float: left;
+}
+
+.Box .content .others .headPor img{
+    width: 100%;
+    height: 100%;
+}
+
+.Box .content .others .chatBox{
+    position: relative;
+    float: left;
+    margin-left: 18px;
+    max-width: calc(100% - 176px);
+    min-height: 26px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding:17px 10px;
+}
+
+.Box .content .others .chatBox::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 8px solid transparent;
+    border-right-color: #fff;
+    top:22px;
+    left: -16px;
+}
+
+.Box .content .others .chat{
+    word-wrap: break-word;
+    font-size: 20px;
+}
+
+
+.Box .sendBox{
+    width: 100%;
+    height: 80px;
+    background-color: #F7F7F7;
+    border-top:1px solid #E3E3E3;
+}
+
+.Box .sendBox #sendInput{
+    float: left;
+    border: none;
+    outline: none;
+    height: 54px;
+    margin-top: 13px;
+    margin-left: 12px;
+    border-radius: 4px;
+    width: calc(100% - 216px);
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.Box .sendBox #sendButton{
+    outline: none;
+    border: none;
+    height: 48px;
+    width: 0;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-right: 12px;
+    float: right;
+    background-color: #05C160;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Box .sendBox #sendButton:active{
+    background-color: #09a755;
+}
+
+.Box .sendBox .voicd{
+    margin-left: 12px;
+    margin-top: 18px;
+    width:44px;
+    height: 44px;
+    float: left;
+}
+
+.Box .sendBox .voicd img{
+    width: 100%;
+    height:100%;
+}
+
+.Box .sendBox .exp{
+    margin:0 12px;
+    margin-top: 18px;
+    width:44px;
+    height: 44px;
+    float: left;
+}
+
+.Box .sendBox .exp img{
+    width: 100%;
+    height:100%;
+}
+
+.Box .sendBox .sun{
+    margin-left:12px;
+    margin-top: 18px;
+    width:44px;
+    height: 44px;
+    float: left;
+}
+
+.Box .sendBox .sun img{
+    width: 100%;
+    height:100%;
+}
